@@ -1,0 +1,99 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+body {
+    background-color: rgb(0, 0, 0);
+}
+.header-image {
+    flex: 1 1 auto;
+    height: auto;
+    width: auto;
+    background-image:url("../images/Header.png");
+    background-size: 120%;
+    background-position:top;
+    background-repeat: no-repeat;
+}
+header {
+    font-family:monospace ;
+    color: whitesmoke;
+    text-shadow: 4px 4px 3px black;
+    position:fixed;
+    display:flex;
+    height: 18vw;
+    width:100%;
+    z-index: 1;
+}
+nav {
+    display:flex;
+    justify-content: right;
+    margin-left: 10%;
+    color:black;
+    flex-wrap: wrap;
+}
+nav div a {
+    display: inline-flex;
+    color: whitesmoke;
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-bottom: 3vh;
+    font-size: 180%;
+    font-size: 4vw;
+    text-decoration: none;
+    
+}
+div a:hover {
+    text-shadow: 4px 4px 5px rgb(255, 0, 0);
+}
+.splash {
+    display: flex;
+    flex: 1 1 300;
+    height: 800px;
+    width: 100%;
+    background-image:url("../images/Splash.png");
+    opacity: .3;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+body header h1 {
+    font-size: 260%;
+    margin-top: 1%;
+    justify-content: center;
+    padding: 3%;
+}
+h2 {
+
+}
+h3 {
+
+}
+h4{
+
+}
+p {
+    color: tomato;
+}
+h3 {
+    color: whitesmoke;
+    font-size: 36px;
+}
+
+.contact-form {
+    display:inline;
+    justify-content: right;
+    position:relative;
+    border-radius: 20px;
+    padding: 20px;
+}
+.email {
+    display: inline;
+    color: lime;
+    text-decoration-color: rgb(0, 172, 0);
+}
+@media screen {
+    
+}
