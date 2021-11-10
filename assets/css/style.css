@@ -13,40 +13,69 @@ body {
     width: auto;
     background-image:url("../images/Header.png");
     background-size: 120%;
-    background-position:top;
+    background-position:bottom;
     background-repeat: no-repeat;
 }
 header {
+    display:flex;
     font-family:monospace ;
     color: whitesmoke;
     text-shadow: 4px 4px 3px black;
-    position:fixed;
-    display:flex;
-    height: 18vw;
+    position:relative;
+    height: 9vh;
     width:100%;
+    transition: 1s ease-in-out;
     z-index: 1;
 }
+header h1 {
+    display: flex;
+    width: 50%;
+    font-size: 260%;
+    margin-top: 1%;
+    justify-content:left;
+    padding: 1%;
+}
 nav {
-    display:flex;
-    justify-content: right;
-    margin-left: 10%;
+    display:inline-flex;
+    margin-left: 60%;
     color:black;
     flex-wrap: wrap;
 }
 nav div a {
-    display: inline-flex;
     color: whitesmoke;
-    padding-top: 10px;
-    padding-right: 25px;
+    padding-top: 8vh;
+    padding-right: 5vw;
     padding-bottom: 3vh;
-    font-size: 4vw;
+    font-size: 150%;
     text-decoration: none;
-    
+    transition: 1s ease-in-out;  
+}
+nav img {
+    height: 103px;
+    width: 100px;
+}
+header:hover {
+    height: 11vh;
 }
 div a:hover {
-    text-shadow: 4px 4px 5px rgb(255, 0, 0);
+    text-shadow: 4px 4px 5px rgb(0, 144, 240);
+    font-size:170%;
 }
+/*
 .splash {
+    position: fixed;
+    flex: 1 1 300;
+    height: 800px;
+    width: 100%;
+    opacity: 1;
+    margin-top: 18vw;
+    background-image:url("../images/Splash.png");
+    margin-bottom: 0px;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+ .splash { 
     display: flex;
     flex: 1 1 300;
     height: 800px;
@@ -57,58 +86,83 @@ div a:hover {
     background-size: cover;
     background-position: center;
     z-index: 1;
-}
-body header h1 {
-    font-size: 260%;
-    margin-top: 1%;
-    justify-content: center;
-    padding: 3%;
-}
+} */
+
 section {
-    display:table-column;
-    display: flex;
+    display:inline-block;
+    position:relative;
     flex-wrap: wrap;
-    z-index: 0;
+    margin-top: 10vh;
 }
 section div .p1, .p2, .p3 {
+    position: inherit;
     opacity: .5;
-}
-.p1:focus-visible {
-    opacity: 1;
+    width: 20vw;
 }
 .Project-card {
-    border-radius: 20px;
-    justify-content: space-around;
-    
+    display:inline;
+    width: 50%;
+    opacity: 1;
+    justify-content:start;
+    margin-left: 5%;
+    margin-right: 5%;
+    transition:1s ease-in-out;
+    overflow-x: hidden;
 }
 .Project-card h2 {
+    display: flex;
     color:whitesmoke;
     font-family: monospace;
     font-size: 180%;
     margin-left: 2vw;
+    transition:1s ease-in-out;
+}
+.Project-card:hover {
+    width: 35%;
+    
+}
+.Project-card img {
+    transition:1s ease-in-out;
+}
+.Project-card:hover img {
+    width: 30vw;
+    opacity: 1;
+}
+.Project-card:hover h2 {
+    text-shadow: 4px 4px 5px rgb(0, 144, 240);
+    font-size:200%;
+    
+}
+.Project-card:hover p {
+    opacity: 1;
+    
 }
 .Project-card p{
+    display: block;
+    justify-self: end;
     color: rgb(211, 211, 211);
     font-family:monospace;
-    font-size:100%;
-    padding-bottom: 15px;
-    margin-left: 20px;
+    font-size:160%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-bottom: 5vh;
+    opacity: 0;
+    transition:1s ease-in-out;
 }
-h3 {
-
+.about-me {
+    display: flex;
+    font-size: 180%;
+   
 }
-h4{
 
-}
-
-h3 {
+.contact h4 {
     color: whitesmoke;
     font-size: 36px;
 }
 
 .contact-form {
-    display:inline;
-    justify-content: right;
+    display:flex;
+    justify-content: left;
     position:relative;
     border-radius: 20px;
     padding: 20px;
@@ -118,6 +172,26 @@ h3 {
     color: lime;
     text-decoration-color: rgb(0, 172, 0);
 }
-@media screen {
-    
+@media screen and (max-width: 768px) {
+    header {
+        height: 11vh;
+        font-size: 90%;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    header h1 {
+        margin-left: 2%;
+        width: 80%;
+    }
+    nav {
+        font-size: 100%;
+        margin-top: 3%;
+        margin-left:3%;
+    }
+    section {
+        margin-top: 18vh;
+    }
+    .Project-card {
+        margin-top: 10%;
+    }
 }
