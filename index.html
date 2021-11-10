@@ -5,36 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="./assets/css/style.css">
 
-<!-- Navbar (sit on top) -->
-
-
-<!-- Header -->
-
-<!-- Page content -->
 <body>
   
     <header>
-      <div class = "header-image">     
+      <div class = "header-image">
         <h1>Gabe L'Herault</h1>
         <nav>
-        <div><a href="section">Projects</a></div>
-        <div><a href="#About-Me">About Me</a></div>
+        <div><a href="#projects">Projects</a></div>
+        <div><a href="#aboutme">About Me</a></div>
         <div><a href="#contact">Contact</a></div>
-        <img src="../Portfolio/assets/images/Profile.png">  
       </nav>
       </div>
     </header>
-
-  
-  
-  <!-- Project Section -->
+      <!-- Project Section -->
     <section>
-      <div class="splash">
+      
 
         <div class="Project-card">
           <h2>Code Refractor</h2>
-          <img src="../Portfolio/assets/images/CodeRefractorCover.png" class="p1" alt="cacaw"/>
-          <p>This <a href="https://sherlockthehomie.github.io/HWCodeRefactor/">Code Refractor</a> application will blow your mind and leave you speechless. Perhaps I should elaborate on the sheer joy you will experience when following the link embedded in this text. Much like a cool breeze on a hot summers day, this code refractor will provide a sense of calm and relaxation, the likes of which youve never felt. Turning that cool breeze into a violent sneeze. You aren't the violent sneeze type, I know one when I see one and you. Definitely not. Lorem ipsum is cool but isnt this more entertaining for patrons of this somewhat satisfactory website?</p>
+          <a href="https://sherlockthehomie.github.io/HWCodeRefactor/"><img src="../Portfolio/assets/images/CodeRefractorCover.png" class="p1" alt="cacaw" id="projects"></a>
+          <p>This application will blow your mind and leave you speechless. Perhaps I should elaborate on the sheer joy you will experience when opening this application. Much like a cool breeze on a hot summers day, this code refractor will provide a sense of calm and relaxation, the likes of which you've never felt. Turning that cool breeze of recent memory into a violent sneeze. You aren't the violent sneeze type, I know one when I see one and you. Definitely not. Lorem ipsum is cool but isnt this more entertaining for patrons of this somewhat satisfactory website?</p>
           
         </div>
         
@@ -51,20 +41,22 @@
         </div>
         
 
-      </div>
+      
     </section>
   <!-- About Section -->
-    <section>
+    <span class="about-me">
+      <img src="../Portfolio/assets/images/Profile.png" id="aboutme" alt="Face of decent looking guy smiling at the upper right corner of the screen">       
       <h3>About me</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel numquam reiciendis nesciunt possimus quam voluptatibus, nostrum quo necessitatibus. Vero illo omnis, aperiam quia excepturi ab ipsam quam ad et consectetur?</p>
-    </section>
+        <p>Born on a small island in North Texas, I'm very familiar with island lingo, like, beach, for example. I'd rather not discuss my heritage here though. Perhaps another time, in another life, when we are both cats. The truth is, I've spent so much time trying to make this website do what I want it to do that after reading the instructions/requirements. It doesn't really say that I need to fill this in with an actual about me. So I took the opportunity to fill in enough text for it to look like a small bio about mightself. There, that looks about right. </p>
+    </span>
 
   <!-- Contact Section -->
   <span class="contact">
     <h4>Contact</h4>
-    <p>Lets get in touch and talk about your next project.</p>
-    <a href="mailto:glherault@tcmsolutions.net" class="email">Email Me</a>
-    <a href="tel:+16082259499" class="phone">Call me</a>
+    <a href="mailto:glherault@tcmsolutions.net" id="contact">Email Me<a>
+      <a href="tel:+16082259499">Call me</a>
+    <p>Lets get in touch and talk about your next project</p>
+    
   </span>
 
 <!-- End page content -->
@@ -72,7 +64,7 @@
 
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
+<footer>
   
 </footer>
 
